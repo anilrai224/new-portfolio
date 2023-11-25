@@ -1,0 +1,27 @@
+.topBtn{
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    font-size: 25px;
+    .arrow{
+        animation: updown 3s infinite linear;
+        position: absolute;
+        right: 15px;
+    }
+}
+@keyframes updown {
+    0%{
+        top: 30px;
+        opacity: 1;
+    }100%{
+        top: 0;
+        opacity: 0.5;
+    }
+}

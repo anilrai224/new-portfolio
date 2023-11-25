@@ -1,0 +1,131 @@
+$color_1: #fff;
+$color_2: #000;
+$background-color_1: aqua;
+$background-color_2: #000;
+$background-color_3: red;
+$background-color_4: transparent;
+
+#contact_container {
+    width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    h1 {
+        text-align: center;
+        margin: 140px 0 90px 0;
+        span {
+            color: $color_1;
+        }
+    }
+	.left_contact {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+.left_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	.contact_list {
+		width: 180px;
+		border-radius: 8px;
+		background-color: $background-color_1;
+		display: flex;
+		flex-direction: column;
+		padding: 30px 20px;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		transition: 1.5s;
+	}
+}
+.contact_list {
+	h4 {
+		color: $color_2;
+		transition: 1.5s;
+	}
+	.contact_icon {
+		color: $color_2;
+		padding-bottom: 5px;
+		font-size: 24px;
+		transition: 1.5s;
+	}
+	&:hover {
+		background-color: $background-color_2;
+		border: 1px solid aqua;
+		cursor: pointer;
+		.contact_icon {
+			color: $color_1;
+		}
+		h4 {
+			color: $color_1;
+		}
+	}
+}
+.contactSection {
+	position: relative;
+	.mailSvg {
+		position: absolute;
+		stroke: cyan;
+		margin: 0 auto;
+	}
+}
+.mailSvg {
+	svg {
+		max-width: 450px;
+		max-height: 450px;
+	}
+}
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	.mailSvg {
+		background-color: $background-color_3;
+	}
+	input {
+		padding: 10px;
+		border-radius: 8px;
+		outline: none;
+		background: transparent;
+		color: $color_1;
+		border: 1px solid aqua;
+		resize: none;
+		font-size: 16px;
+	}
+	button {
+		padding: 10px 33px;
+		width: max-content;
+		background-color: $background-color_4;
+		color: $color_1;
+		border: 1px solid aqua;
+		font-size: 16px;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: 1s;
+		&:hover {
+			color: $color_2;
+			background-color: $background-color_1;
+		}
+	}
+}
+textarea {
+	padding: 10px;
+	border-radius: 8px;
+	outline: none;
+	background: transparent;
+	color: $color_1;
+	border: 1px solid aqua;
+	resize: none;
+	font-size: 16px;
+}
+@media (max-width:799px) {
+	#contact_container {
+		grid-template-columns: 1fr;
+		gap: 40px;
+		.contact_list {
+			margin: 0 auto;
+		}
+	}
+}

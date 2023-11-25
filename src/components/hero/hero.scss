@@ -1,0 +1,9 @@
+.hero{
+    height: calc(100vh - 50px);
+    display: grid;
+    place-items: center;
+    p{
+        font-weight: 600;
+        font-size: 40px;
+    }
+}

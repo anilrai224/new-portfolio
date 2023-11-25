@@ -1,0 +1,42 @@
+.skills{
+    width: 100%;
+    h1{
+        padding: 30px;
+    }
+    .container{
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        gap: 20px;
+        .skill{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 40px;
+            .imgContainer{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            h2{
+                font-size: 20px;
+            }
+            p{
+                color: gray;
+                font-size: 14px;
+            }
+        }
+    }
+}
